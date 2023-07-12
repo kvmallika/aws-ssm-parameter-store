@@ -23,7 +23,7 @@ parameters = [
   { name = " dev.payment.user_port " , value = "8080" },
   { name = " dev.payment.amqp_host " , value = "rabbitmq-dev.vemdevops.online" },
   { name = " dev.payment.amqp_user " , value = "roboshop" },
-  { name = " dev.payment.amqp_pass " , value = "rabbitmq_appuser_password" },
+  { name = " dev.payment.amqp_pass " , value = "roboshop123" },
   { name = " dev.dispatch.amqp_host " , value = "rabbitmq-dev.vemdevops.online" },
   { name = " dev.dispatch.amqp_user " , value = "roboshop" },
   { name = " dev.dispatch.amqp_pass " , value = "roboshop123" }
