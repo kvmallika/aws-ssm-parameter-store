@@ -1,5 +1,4 @@
 variable "parameters" {
 }
 variable "passwords" {
-
 }
