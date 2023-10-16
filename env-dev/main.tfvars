@@ -4,9 +4,8 @@ parameters = [
   { name = " dev.frontend.user_url " , value = "http://user-dev.vemdevops.online:8080/" },
   { name = " dev.frontend.shipping_url " , value = "http://shipping-dev.vemdevops.online:8080/" },
   { name = " dev.frontend.payment_url " , value = "http://payment-dev.vemdevops.online:8080/" },
-  { name = " dev.catalogue.mongodb_endpoint " , value = "mongodb-dev.vemdevops.online" },
-  { name = " dev.catalogue.mongo " , value = "MONGO=true" },
-  { name = " dev.catalogue.mongo_url " , value = "mongodb://mongodb-dev.vemdevops.online:27017/catalogue" },
+  { name = " dev.catalogue.mongo_endpoint " , value = "mongodb-dev.vemdevops.online" },
+  { name = " dev.catalogue.mongo " , value = "DOCUMENTDB=true" },
   { name = " dev.user.mongo " , value = "MONGO=true" },
   { name = " dev.user.redis_host " , value = "redis-dev.vemdevops.online" },
   { name = " dev.user.mongo_url " , value = "mongodb://mongodb-dev.vemdevops.online:27017/users" },
@@ -24,7 +23,9 @@ parameters = [
   { name = " dev.payment.amqp_host " , value = "rabbitmq-dev.vemdevops.online" },
   { name = " dev.payment.amqp_user " , value = "roboshop" },
   { name = " dev.dispatch.amqp_host " , value = "rabbitmq-dev.vemdevops.online" },
-  { name = " dev.dispatch.amqp_user " , value = "roboshop" }
+  { name = " dev.dispatch.amqp_user " , value = "roboshop" },
+  { name = " dev.docdb.db_endpoint " , value = "docdb-dev-db.cluster-csieoeticpo1.us-east-1.docdb.amazonaws.com" }
+
 ]
 
 passwords = [
@@ -35,7 +36,8 @@ passwords = [
   { name = " dev.docdb.db_pass " , value = "roboshop1234" },
   { name = " dev.rds.db_user " , value = "roboshop" },
   { name = " dev.rds.db_pass " , value = "roboshop1234" },
-  { name = " dev.rabbitmq.rabbitmq_appuser_password " , value = "roboshop1234" }
+  { name = " dev.rabbitmq.rabbitmq_appuser_password " , value = "roboshop1234" },
+  { name = " dev.catalogue.mongo_url " , value = "mongodb://roboshop:roboshop1234@docdb-dev-db.cluster-csieoeticpo1.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 
 ]
 
