@@ -39,4 +39,3 @@ passwords = [
   { name = " dev.user.mongo_url " , value = "mongodb://roboshop:roboshop1234@docdb-dev-db.cluster-csieoeticpo1.us-east-1.docdb.amazonaws.com:27017/user?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 
 ]
-
