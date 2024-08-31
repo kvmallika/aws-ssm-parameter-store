@@ -25,7 +25,6 @@ parameters = [
   { name = " prod.dispatch.amqp_host " , value = "rabbitmq-prod.vemudevops.online" },
   { name = " prod.dispatch.amqp_user " , value = "roboshop" },
   { name = " prod.docdb.db_endpoint " , value = "docdb-prod-db.cluster-csieoeticpo1.us-east-1.docdb.amazonaws.com" }
-
 ]
 
 passwords = [
